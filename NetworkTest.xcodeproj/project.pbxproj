@@ -13,6 +13,8 @@
 		69765E03256A97B100E2CA21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69765E01256A97B100E2CA21 /* Main.storyboard */; };
 		69765E05256A97B400E2CA21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69765E04256A97B400E2CA21 /* Assets.xcassets */; };
 		69765E08256A97B400E2CA21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69765E06256A97B400E2CA21 /* LaunchScreen.storyboard */; };
+		69765E17256A9A7C00E2CA21 /* NetworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69765E16256A9A7C00E2CA21 /* NetworkCell.swift */; };
+		69765E1E256BCC0700E2CA21 /* JediOrSith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69765E1A256AA30D00E2CA21 /* JediOrSith.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		69765E04256A97B400E2CA21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69765E07256A97B400E2CA21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69765E09256A97B400E2CA21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69765E16256A9A7C00E2CA21 /* NetworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCell.swift; sourceTree = "<group>"; };
+		69765E1A256AA30D00E2CA21 /* JediOrSith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JediOrSith.swift; path = NetworkTest/JediOrSith.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		69765DFA256A97B100E2CA21 /* NetworkTest */ = {
 			isa = PBXGroup;
 			children = (
-				69765DFB256A97B100E2CA21 /* AppDelegate.swift */,
-				69765DFD256A97B100E2CA21 /* SceneDelegate.swift */,
-				69765DFF256A97B100E2CA21 /* ViewController.swift */,
-				69765E01256A97B100E2CA21 /* Main.storyboard */,
+				69765E14256A989700E2CA21 /* Storyboards */,
+				69765E13256A983200E2CA21 /* Controllers */,
+				69765E11256A981000E2CA21 /* Model */,
+				69765E12256A981A00E2CA21 /* View */,
+				69765E10256A980000E2CA21 /* Delegates */,
 				69765E04256A97B400E2CA21 /* Assets.xcassets */,
-				69765E06256A97B400E2CA21 /* LaunchScreen.storyboard */,
 				69765E09256A97B400E2CA21 /* Info.plist */,
 			);
 			path = NetworkTest;
+			sourceTree = "<group>";
+		};
+		69765E10256A980000E2CA21 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				69765DFD256A97B100E2CA21 /* SceneDelegate.swift */,
+				69765DFB256A97B100E2CA21 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		69765E11256A981000E2CA21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69765E1A256AA30D00E2CA21 /* JediOrSith.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		69765E12256A981A00E2CA21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69765E16256A9A7C00E2CA21 /* NetworkCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69765E13256A983200E2CA21 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69765DFF256A97B100E2CA21 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		69765E14256A989700E2CA21 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				69765E06256A97B400E2CA21 /* LaunchScreen.storyboard */,
+				69765E01256A97B100E2CA21 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +185,9 @@
 			files = (
 				69765E00256A97B100E2CA21 /* ViewController.swift in Sources */,
 				69765DFC256A97B100E2CA21 /* AppDelegate.swift in Sources */,
+				69765E17256A9A7C00E2CA21 /* NetworkCell.swift in Sources */,
 				69765DFE256A97B100E2CA21 /* SceneDelegate.swift in Sources */,
+				69765E1E256BCC0700E2CA21 /* JediOrSith.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9U7X5634U9;
 				INFOPLIST_FILE = NetworkTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9U7X5634U9;
 				INFOPLIST_FILE = NetworkTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
