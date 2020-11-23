@@ -11,8 +11,10 @@ class ViewController: UIViewController {
      private var netData = [SWCharacter]()
 
     @IBOutlet weak var NetList: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadData()
         configureTable()
     }
     
@@ -32,14 +34,16 @@ class ViewController: UIViewController {
                 return
             }
             
-            guard let data = data as? Data
+            guard let data = data
             else{
                 //error handling
                 //response.statusCode
                 return
             }
             do {
-                let jsonArray = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [ [String: Any?]]
+                let jsonLib = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as!  [String: Any?]
+                
+                let jsonArray = jsonLib["results"] as! [[String: Any?]]
                 
                 for object in jsonArray{
                     if let name = object["name"] as? String,
@@ -50,7 +54,11 @@ class ViewController: UIViewController {
                         self.netData.append(SWCharacter(name: name, birthYear: bYear, gender: gender, height: hgt))
                     }
                 }
+                DispatchQueue.main.async {
+                    self.NetList.reloadData()
+                }
             }
+            
             catch (let jsonError) {
                 print(jsonError)
             }
@@ -71,7 +79,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         as! NetworkCell
         let currData = netData[indexPath.row]
         cell.nameOutlet.text = currData.name
-        cell.heightOutlet.text = "height: \(currData.height)"
+        cell.heightOutlet.text = "Height: \(currData.height)"
         cell.birthOutlet.text = currData.birthYear
         cell.genderOutlet.text = currData.gender
         

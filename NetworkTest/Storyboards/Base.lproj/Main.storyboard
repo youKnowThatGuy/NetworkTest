@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--STAR WARS characters:-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NetworkTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,35 +28,46 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frV-yu-Igs">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frV-yu-Igs">
                                                     <rect key="frame" x="33" y="11" width="45" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCZ-pI-Ogo">
-                                                    <rect key="frame" x="101" y="33" width="94" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-el-JrP">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-el-JrP">
                                                     <rect key="frame" x="308" y="11" width="57" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5g-8j-K6J">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5g-8j-K6J">
                                                     <rect key="frame" x="308" y="40" width="51" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCZ-pI-Ogo">
+                                                    <rect key="frame" x="86" y="33" width="94" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="PCZ-pI-Ogo" firstAttribute="top" secondItem="U3O-pf-FpB" secondAttribute="topMargin" constant="22" id="2qY-PX-o1J"/>
+                                                <constraint firstItem="e5g-8j-K6J" firstAttribute="top" secondItem="K8c-el-JrP" secondAttribute="bottom" constant="8" id="2uD-sE-Xjf"/>
+                                                <constraint firstItem="e5g-8j-K6J" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PCZ-pI-Ogo" secondAttribute="trailing" constant="8" symbolic="YES" id="Aio-8i-WTY"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="K8c-el-JrP" secondAttribute="trailing" constant="29" id="BS0-tR-g72"/>
+                                                <constraint firstAttribute="trailing" secondItem="e5g-8j-K6J" secondAttribute="trailing" constant="55" id="ESK-9h-VNM"/>
+                                                <constraint firstItem="PCZ-pI-Ogo" firstAttribute="bottom" secondItem="U3O-pf-FpB" secondAttribute="bottomMargin" id="Gi6-Qj-7Wi"/>
+                                                <constraint firstItem="K8c-el-JrP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="frV-yu-Igs" secondAttribute="trailing" symbolic="YES" id="JHV-a7-Osr"/>
+                                                <constraint firstItem="frV-yu-Igs" firstAttribute="leading" secondItem="U3O-pf-FpB" secondAttribute="leadingMargin" constant="13" id="Oac-Bl-PEk"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="frV-yu-Igs" secondAttribute="bottom" constant="22" id="RSP-rz-gNa"/>
+                                                <constraint firstAttribute="bottom" secondItem="e5g-8j-K6J" secondAttribute="bottom" constant="4" id="VcS-s2-Nnx"/>
+                                                <constraint firstItem="K8c-el-JrP" firstAttribute="top" secondItem="U3O-pf-FpB" secondAttribute="topMargin" id="qXw-Yt-9ni"/>
+                                                <constraint firstItem="PCZ-pI-Ogo" firstAttribute="leading" secondItem="U3O-pf-FpB" secondAttribute="leadingMargin" constant="66" id="twE-1y-FGQ"/>
+                                                <constraint firstItem="frV-yu-Igs" firstAttribute="top" secondItem="U3O-pf-FpB" secondAttribute="topMargin" id="upG-6d-oXD"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="birthOutlet" destination="PCZ-pI-Ogo" id="xiB-xU-Cym"/>
@@ -77,7 +88,7 @@
                             <constraint firstItem="aMg-6a-XkG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XRM-kI-AWu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="6iA-oc-xHq"/>
+                    <navigationItem key="navigationItem" title="STAR WARS characters:" id="6iA-oc-xHq"/>
                     <connections>
                         <outlet property="NetList" destination="aMg-6a-XkG" id="OZg-Ns-LFX"/>
                     </connections>
