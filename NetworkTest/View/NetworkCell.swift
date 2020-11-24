@@ -20,7 +20,8 @@ class NetworkCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        //self.backgroundView = UIImageView(image: UIImage(named:"back"))
+        self.backgroundColor = UIColor(white: 1, alpha: 0.5)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

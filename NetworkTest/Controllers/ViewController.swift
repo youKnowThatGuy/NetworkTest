@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         configureTable()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        NetList.backgroundView = UIImageView(image: UIImage(named:"back"))
+    }
+    
     func configureTable(){
         NetList.dataSource = self
         NetList.delegate = self
@@ -80,7 +84,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         let currData = netData[indexPath.row]
         cell.nameOutlet.text = currData.name
         cell.heightOutlet.text = "Height: \(currData.height)"
-        cell.birthOutlet.text = currData.birthYear
+        cell.birthOutlet.text = "Birth: \(currData.birthYear)"
         cell.genderOutlet.text = currData.gender
         
         return cell

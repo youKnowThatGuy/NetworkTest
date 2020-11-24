@@ -29,26 +29,26 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frV-yu-Igs">
-                                                    <rect key="frame" x="33" y="11" width="45" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="33" y="11" width="46" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-el-JrP">
-                                                    <rect key="frame" x="308" y="11" width="57" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="307" y="11" width="58" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5g-8j-K6J">
-                                                    <rect key="frame" x="308" y="40" width="51" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="307" y="40" width="52" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCZ-pI-Ogo">
-                                                    <rect key="frame" x="86" y="33" width="94" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="86" y="33" width="96" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -60,7 +60,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="K8c-el-JrP" secondAttribute="trailing" constant="29" id="BS0-tR-g72"/>
                                                 <constraint firstAttribute="trailing" secondItem="e5g-8j-K6J" secondAttribute="trailing" constant="55" id="ESK-9h-VNM"/>
                                                 <constraint firstItem="PCZ-pI-Ogo" firstAttribute="bottom" secondItem="U3O-pf-FpB" secondAttribute="bottomMargin" id="Gi6-Qj-7Wi"/>
-                                                <constraint firstItem="K8c-el-JrP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="frV-yu-Igs" secondAttribute="trailing" symbolic="YES" id="JHV-a7-Osr"/>
+                                                <constraint firstItem="K8c-el-JrP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="frV-yu-Igs" secondAttribute="trailing" constant="8" symbolic="YES" id="JHV-a7-Osr"/>
                                                 <constraint firstItem="frV-yu-Igs" firstAttribute="leading" secondItem="U3O-pf-FpB" secondAttribute="leadingMargin" constant="13" id="Oac-Bl-PEk"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="frV-yu-Igs" secondAttribute="bottom" constant="22" id="RSP-rz-gNa"/>
                                                 <constraint firstAttribute="bottom" secondItem="e5g-8j-K6J" secondAttribute="bottom" constant="4" id="VcS-s2-Nnx"/>
